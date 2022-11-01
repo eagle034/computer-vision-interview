@@ -26,7 +26,9 @@ Interview questions to ponder related to computer vision.
 * what is the camera matrix and what does it consist of *** A camera is a mapping between the 3D world and a 2D image. Camera matrix consists of focal lengths (fx,fy), principal point offset (x0,y0), axis skew(s)  
 ![image](https://user-images.githubusercontent.com/47903307/199159571-d3c7479c-806d-4512-9182-63bd6734869e.png)
 https://ksimek.github.io/2013/08/13/intrinsic/ 
-* how to convert the point for 3D world coordinates into 2d image coordinates *** x = PX where x = (x,y), X = (X,Y,Z) and generalized pinhole camera model, P = K[R|t]  P is required to properly relate world points to image points.
+* how to convert the point for 3D world coordinates into 2d image coordinates ? *** x = PX where x = (x,y), X = (X,Y,Z) and generalized pinhole camera model, P = K[R|t]
+  
+P is required to properly relate world points to image points.
 ![image](https://user-images.githubusercontent.com/47903307/199160555-cb6dffd0-4a8c-4baf-8eb5-f434130d34ea.png)
 https://www.cs.cmu.edu/~16385/s17/Slides/11.1_Camera_matrix.pdf
 
