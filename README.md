@@ -41,8 +41,13 @@ Interview questions to ponder related to computer vision.
   https://www.edmundoptics.com/knowledge-center/application-notes/optics/chromatic-and-monochromatic-optical-aberrations/
   
 * Explain fixed pattern noise (FPN). Where does it come from? How do you correct for FPN?
+	
+  Fixed Pattern Noise is due to pixel-to-pixel variations in the absence of illumination
 
-  FPN (also called nonuniformity) is the spatial variation in pixel output values under uniform illumination due to device and interconnect parameter variations (mismatches) across the sensor
+  The main cause of FPN in CMOS imagers isvariations in V_T
+  
+  >> between reset and buffer MOSFETs in the pixel
+  >> and between MOSFETs in the column circuits
   
    Experimentally, FPN is measured as follows:
 	◦ Set a constant uniform illumination level (including no illumination)
@@ -54,6 +59,7 @@ Interview questions to ponder related to computer vision.
   Fixed pattern noise is removed by subtracting a master dark frame taken with the same gain, sensor temperature, and exposure time as the intended image.
 	
 	  https://isl.stanford.edu/~abbas/ee392b/lect07.pdf
+	  https://ece.uwaterloo.ca/~ece434/Winter2008/Noise.pdf
   
 * How do you configure an image sensor?
 * How does data get out of an image sensor? What are some standards you know of?
