@@ -47,6 +47,11 @@ Interview questions to ponder related to computer vision.
 
 ## Mathematics
 * what are eigenvalues and eigenvectors
+
+	Certain exceptional vectors x are in the same direction as Ax. Those are the “eigenvectors”. Multiply an eigenvector by A, and the
+			vector Ax is a number lambda times the original x.
+		The basic equation is Ax = lambda*x. The number lambda is an eigenvalue of A
+		
 * Implement SQRT(const double & x) without using any special functions, just fundamental arithmetic.
 
 
