@@ -41,6 +41,18 @@ Interview questions to ponder related to computer vision.
   https://www.edmundoptics.com/knowledge-center/application-notes/optics/chromatic-and-monochromatic-optical-aberrations/
   
 * Explain fixed pattern noise (FPN). Where does it come from? How do you correct for FPN?
+
+  FPN (also called nonuniformity) is the spatial variation in pixel output values under uniform illumination due to device and interconnect parameter variations (mismatches) across the sensor
+  
+   Experimentally, FPN is measured as follows:
+	◦ Set a constant uniform illumination level (including no illumination)
+	◦ Take many images
+	◦ For each pixel compute the average output value (to average out temporal noise)
+	◦ Estimate the standard deviation of the average pixel values
+	◦ Repeat the procedure for several uniform illumination levels
+	
+  https://isl.stanford.edu/~abbas/ee392b/lect07.pdf
+  
 * How do you configure an image sensor?
 * How does data get out of an image sensor? What are some standards you know of?
 * Suppose you have a flash LED that can deliver a high lumen output for a fraction of a second, but no more. How would you synchronize the LED with the start of a frame?
