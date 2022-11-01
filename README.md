@@ -128,7 +128,16 @@ https://www.cs.cmu.edu/~16385/s17/Slides/11.1_Camera_matrix.pdf
 ## Detection/Features
 * what visual features do I know (SIFT, SURF, ORB, etc)
 * how does the detector of the feature X work
-* What is a difference between SIFT and SURF?
+* What is a difference between SIFT and SURF? ***SIFT is an algorithm used to extract the features from the images. SURF is the speed up version of SIFT. Both of them 	 are invariant to scale changes, blur, rotation, illumination changes and affine transformation
+
+  SIFT steps : 
+  1. estimate a scale space extrema using the Difference of Gaussian (DoG)
+  2. key point localization where the key point candidates are localized and refined by eliminating the low contrast points.  
+  3. a key point orientation assignment based on local image gradient
+  4. descriptor generator to compute the local image descriptor for each key point based on image gradient magnitude and orientation 
+
+  SURF steps : SURF approximates the DoG with box filters. Instead of Gaussian averaging the image, squares are used for approximation since the convolution with 	square is much faster if the integral image is used. Also this can be done in parallel for different scales. The SURF uses a BLOB detector which is based on the  	Hessian matrix to find the points of interest. For orientation assignment, it uses wavelet responses in both horizontal and vertical directions by applying 	   	adequate Gaussian weights. For feature description also SURF uses the wavelet responses
+  https://arxiv.org/ftp/arxiv/papers/1710/1710.02726.pdf
 * How can you detect car through CCTV Camera?
 
 	###Detect the car (rectangular object detection with a certain threshold)
