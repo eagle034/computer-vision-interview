@@ -92,7 +92,8 @@ https://www.cs.cmu.edu/~16385/s17/Slides/11.1_Camera_matrix.pdf
 * Given a set of coordinates of joints, perform a rotation such that the hips are perpendicular to the camera
 
 ## 2D Image Processing
-* rough overview of optical flow estimation (again, just 3-4 sentences)
+* rough overview of optical flow estimation (again, just 3-4 sentences) ***Optical Flow Estimation is the problem of finding pixel-wise motions between consecutive images. Approaches for optical flow estimation include correlation-based, block-matching, feature tracking, energy-based, and more recently gradient-based.
+  
 * what are the necessary assumptions during optical flow estimation (answer: constant image brightness, no lens/shutter distortion)
 * How would you code up a custom rectangle detector?
 * How would you send an encoded message in an image. First encode it, then write code to decode it.
@@ -102,7 +103,7 @@ https://www.cs.cmu.edu/~16385/s17/Slides/11.1_Camera_matrix.pdf
 * How would you remove outliers when trying to estimate a flat plane from noisy samples?
 * Content-based image retrieval (CBIR), also known as query by image content (QBIC) is implemented how?
 * Describe how convolution works. What about if your inputs are grayscale vs RGB imagery? What determines the shape of the next layer?
-* How do you rotate an image 90 degrees most efficiently if you don't know anything about the cache of the system you're working on?
+* How do you rotate an image 90 degrees most efficiently if you don't know anything about the cache of the system you're working on? ***Flip + Transpose
 * Implement voronoi clustering
 * Given a MxN matrix where each element can either be 0 or 1. We need to find the shortest path between a given source cell to a destination cell (connected components).
 * Make a histogram of 2 variables.
