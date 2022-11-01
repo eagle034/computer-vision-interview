@@ -8,6 +8,7 @@ Interview questions to ponder related to computer vision.
   Geometric camera calibration estimates the parameters of a lens and image sensor of an image or video camera
 
   Camera parameters include intrinsics, extrinsics, and distortion coefficients. To estimate the camera parameters, you need to have 3-D world points and their       corresponding 2-D image points. You can get these correspondences using multiple images of a calibration pattern, such as a checkerboard. Using the correspondences, you can solve for the camera parameters. 
+  
   ![image](https://user-images.githubusercontent.com/47903307/199170111-3ff5b71c-cb0c-4304-972b-fb07a7d3c61a.png)
 
   After you calibrate a camera, to evaluate the accuracy of the estimated parameters, you can:
@@ -35,6 +36,7 @@ Interview questions to ponder related to computer vision.
   Monochromatic - Spherical, Coma, Astigmatism, Field Curvature, Distortion, Defocus, Tilt
   
   Chromatic aberrations
+  
   https://www.edmundoptics.com/knowledge-center/application-notes/optics/comparison-of-optical-aberrations/
   https://www.edmundoptics.com/knowledge-center/application-notes/optics/chromatic-and-monochromatic-optical-aberrations/
   
