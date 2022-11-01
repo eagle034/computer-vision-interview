@@ -7,22 +7,37 @@ Interview questions to ponder related to computer vision.
   
   Geometric camera calibration estimates the parameters of a lens and image sensor of an image or video camera
 
-  Camera parameters include intrinsics, extrinsics, and distortion coefficients. To estimate the camera parameters, you need to have 3-D world points and their       corresponding 2-D image points. You can get these correspondences using multiple images of a calibration pattern, such as a checkerboard. Using the correspondences, you can solve for the camera parameters. After you calibrate a camera, to evaluate the accuracy of the estimated parameters, you can:
+  Camera parameters include intrinsics, extrinsics, and distortion coefficients. To estimate the camera parameters, you need to have 3-D world points and their       corresponding 2-D image points. You can get these correspondences using multiple images of a calibration pattern, such as a checkerboard. Using the correspondences, you can solve for the camera parameters. 
+  ![image](https://user-images.githubusercontent.com/47903307/199170111-3ff5b71c-cb0c-4304-972b-fb07a7d3c61a.png)
+
+  After you calibrate a camera, to evaluate the accuracy of the estimated parameters, you can:
   
     Plot the relative locations of the camera and the calibration pattern
     
     Calculate the reprojection errors.
     
     Calculate the parameter estimation errors.
-
+    https://www.mathworks.com/help/vision/ug/camera-calibration.html
 * say you have acquired a number of constraints for example during camera calibration process - how do you solve the system of the constraints (e.g. describe gradient method in 3-4 sentences)
 * Describe the sources of noise in an image sensor.
 * How does a camera see in color?
 * Draw the schematic of a 3T pixel architecture.
 * List out all of the lens parameters you can think of.
+
+  R1, R2, thickness (t), refractive index (n)
+  
 * You've got a camera that powers on and takes pictures, but the images it captures are very dim. What could be the potential problems?
 * What are the typical voltage levels required to operate an image sensor? What power domains do these voltages supply to?
 * Your image is blurry. What are the potential issues?
+
+  Aberrations
+  
+  Monochromatic - Spherical, Coma, Astigmatism, Field Curvature, Distortion, Defocus, Tilt
+  
+  Chromatic aberrations
+  https://www.edmundoptics.com/knowledge-center/application-notes/optics/comparison-of-optical-aberrations/
+  https://www.edmundoptics.com/knowledge-center/application-notes/optics/chromatic-and-monochromatic-optical-aberrations/
+  
 * Explain fixed pattern noise (FPN). Where does it come from? How do you correct for FPN?
 * How do you configure an image sensor?
 * How does data get out of an image sensor? What are some standards you know of?
