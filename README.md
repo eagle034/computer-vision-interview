@@ -51,7 +51,9 @@ Interview questions to ponder related to computer vision.
 	◦ Estimate the standard deviation of the average pixel values
 	◦ Repeat the procedure for several uniform illumination levels
 	
-  https://isl.stanford.edu/~abbas/ee392b/lect07.pdf
+  Fixed pattern noise is removed by subtracting a master dark frame taken with the same gain, sensor temperature, and exposure time as the intended image.
+	
+	  https://isl.stanford.edu/~abbas/ee392b/lect07.pdf
   
 * How do you configure an image sensor?
 * How does data get out of an image sensor? What are some standards you know of?
