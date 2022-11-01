@@ -103,6 +103,8 @@ Interview questions to ponder related to computer vision.
 
 ## Design Patterns
 * What is a singleton? How and when is it used?
+*** Singleton pattern is a design pattern which restricts a class to instantiate its multiple objects. It is nothing but a way of defining a class. Class is defined in such a way that only one instance of the class is created in the complete execution of the program. Singleton classes are used for logging, driver objects, caching and thread pool, database connections.   
+![image](https://user-images.githubusercontent.com/47903307/199155679-acad0563-d779-41e3-9cbb-a1285ca55b5b.png)
 
 ## Software Engineering
 * What is the difference between debug and release mode?
