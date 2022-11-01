@@ -131,7 +131,7 @@ https://www.cs.cmu.edu/~16385/s17/Slides/11.1_Camera_matrix.pdf
   Step 1: Calculate Euclidean Distance.
   ```python
   def euclidean_distance(row1, row2):
-  	distance = 0.0
+	distance = 0.0
   	for i in range(len(row1)-1):
   		distance += (row1[i] - row2[i])**2
   	return sqrt(distance)
@@ -159,10 +159,12 @@ https://www.cs.cmu.edu/~16385/s17/Slides/11.1_Camera_matrix.pdf
 	prediction = max(set(output_values), key=output_values.count)
 	return prediction
   ```
+  https://machinelearningmastery.com/tutorial-to-implement-k-nearest-neighbors-in-python-from-scratch/
   
 ## Operating Systems
 * What is meant by virtual memory?
-
+	Virtual memory is a memory management technique where secondary memory can be used as if it were a part of the main memory. Virtual memory is a common technique used in a computer's operating system (OS)
+  
 ## Data Structures
 * Write a function to delete a duplicate node within a linked list
 * Time complexity of insertion in Linked List vs. Array
