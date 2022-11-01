@@ -116,6 +116,7 @@ Interview questions to ponder related to computer vision.
 
 ## Object Oriented Programming
 * What is inheritance? Polymorphism?
+** In inheritance, the child class inherits the methods from the parent class. In polymorphism, it is possible to define methods in the child class that have the same name as the methods in the parents class. It is possible to modify in the child class that has been inherited from the parent class.
 
 ## Algorithms
 * Check whether two words are anagram with each other
