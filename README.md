@@ -24,6 +24,10 @@ Interview questions to ponder related to computer vision.
 
 ## 3D Image Processing
 * what is the camera matrix and what does it consist of
+***
+A camera is a mapping between the 3D world and a 2D image. Camera matrix consists of focal lengths (fx,fy), principal point offset (x0,y0), axis skew(s)  
+![image](https://user-images.githubusercontent.com/47903307/199159571-d3c7479c-806d-4512-9182-63bd6734869e.png)
+!(https://ksimek.github.io/2013/08/13/intrinsic/) 
 * how to convert the point for 3D world coordinates into 2d image coordinates
 * How to eliminate corners in a bunch of 3D point cloud?
 * How to find shape/object correspondences in 3D point cloud?
