@@ -104,6 +104,10 @@ https://www.cs.cmu.edu/~16385/s17/Slides/11.1_Camera_matrix.pdf
 * how does the detector of the feature X work
 * What is a difference between SIFT and SURF?
 * How can you detect car through CCTV Camera?
+
+	###Detect the car (rectangular object detection with a certain threshold)
+	###Apply Kalman filter
+	
 * Write a function that fills a buffer with a rolling set of image object segmentation results
 * Implement non maximal suppression as efficiently as you can.
 
